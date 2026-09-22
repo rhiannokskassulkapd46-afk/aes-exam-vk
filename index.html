@@ -70,20 +70,10 @@
     .active { display: block; }
     
     .settings-gear-main {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 14px;
-      background: var(--nav-btn-bg);
-      color: var(--btn-text);
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 16px;
-      border: 1px solid var(--card-border);
-      cursor: pointer;
-      gap: 8px;
-      margin: 12px 0;
+      display: flex; align-items: center; justify-content: center; width: 100%;
+      padding: 14px; background: var(--nav-btn-bg); color: var(--btn-text);
+      border-radius: 12px; font-weight: 600; font-size: 16px;
+      border: 1px solid var(--card-border); cursor: pointer; gap: 8px; margin: 12px 0;
     }
     .settings-gear-main svg { width: 20px; height: 20px; fill: currentColor; }
 
@@ -346,7 +336,7 @@ function initStorageSync(callback) {
 
 function isMobileClient() {
   var ua = navigator.userAgent || '';
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|VKAndroidApp|VKIOSApp/i.test(ua) || ('ontouchstart' in window);
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|VKAndroidApp|VKIOSApp/i.test(ua);
 }
 
 var isMobile = isMobileClient();
@@ -685,3 +675,4 @@ initStorageSync(function() {
 </script>
 </body>
 </html>
+
